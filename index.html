@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - About Me</title>
+  <link rel="icon" href="pfp.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="skillissue.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="about">
+    <div class="about-wrapper">
+      <img src="pfp.jpg" alt="[Your Name] Photo">
+      <h1 id="nameTyped"></h1><hr>
+      <p>An aspiring Back-end developer, Welcome to my portfolio page!</p>
+
+      <div class="skills-container">
+        <div class="skill-bar">
+          <span class="skill-name">HTML</span>
+          <progress class="skill-progress" value="60" max="100"></progress>
+          <span class="skill-percentage">60%</span>
+        </div>
+        <div class="skill-bar">
+          <span class="skill-name">CSS</span>
+          <progress class="skill-progress" value="35" max="100"></progress>
+          <span class="skill-percentage">35%</span>
+        </div>
+        <div class="skill-bar">
+          <span class="skill-name">PHP</span>
+          <progress class="skill-progress" value="70" max="100"></progress>
+          <span class="skill-percentage">70%</span>
+        </div>
+        <div class="skill-bar">
+          <span class="skill-name">Java</span>
+          <progress class="skill-progress" value="35" max="100"></progress>
+          <span class="skill-percentage">35%</span>
+        </div>
+        <div class="skill-bar">
+          <span class="skill-name">Video editing</span>
+          <progress class="skill-progress" value="50" max="100"></progress>
+          <span class="skill-percentage">50%</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Shan</p>
+  </footer>
+
+  <script>
+      const typedText = document.getElementById("nameTyped");
+      const text = "Hello, I'm Shan Khyle";
+      let index = 0;
+
+      function typeWriter() {
+        if (index < text.length) {
+          typedText.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, 100);
+        }
+      }
+
+      typeWriter();
+
+     
+  </script>
+</body>
+</html>

@@ -1,0 +1,365 @@
+
+body {
+  margin: 0; /* Remove default margin */
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keep footer at bottom */
+  font-family: helvetica, sans-serif;
+  background-color: #E1F0DA;
+}
+
+main {
+  flex: 1; /* Fill remaining space */
+  padding: 20px; /* Add margin */
+  text-align: center; /* Optional: center content */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+}
+
+nav ul li {
+  display: inline-block; /* Ensure elements side-by-side */
+  margin: 0 1px; /* Add spacing between elements */
+  padding: 10px 20px; /* Add padding for hover effect */
+}
+
+nav ul li:hover {
+  background-color: #BFD8AF; /* Change background color on hover */
+  border-radius: 5px; /* Add rounded corners on hover */
+}
+
+nav ul li:not(:last-child) { /* Style all except last child */
+  border-right: 1px solid #ddd; /* Add border-right */
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  border: 1px solid;
+  padding: 20px;
+}
+
+h1,h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+  
+section {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+a {
+  font-weight: bold;
+}
+
+hr{
+    height: 1px;
+    width: 95%
+}
+
+footer {
+  font-size: 12px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.skills-container {
+  text-align: right;
+  align-items: flex-start; /* Left justify within container */
+}
+
+.skill-bar {
+  align-items: center; /* Align text and progress bar vertically */
+  justify-content: space-between; /* Distribute elements evenly */
+}
+
+.skill-name {
+  margin-right: 10px; /* Add spacing between name and progress bar */
+}
+
+.skill-percentage {
+  margin-left: 10px; /* Add spacing between progress bar and percentage */
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-wrapper img {
+  /* Adjust margin/padding if needed */
+  margin-bottom: 20px; /* Add space between image and text */
+  max-width: 35%;
+  border-radius: 20%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  filter: grayscale(90%);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+  border: 2px solid #fff;
+  
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 700px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.brc{
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.feedback-form textarea {
+  height: 150px;
+}
+
+.feedback-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #222;
+}
+
+.contact-info li a img {
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+}
+
+.contact-box {
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  margin: 2% auto; /* Center the box horizontally */
+  padding: 20px; /* Add some padding for spacing */
+  border: 1px solid #ccc; /* Add a thin border */
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
+  background-color: #333;
+  border-radius: 1%;
+}
+
+.contact-info,
+.feedback-form {
+  margin-bottom: 20px; /* Add space between sections */
+}
+
+.contact-info h3 {
+  margin-bottom: 10px; /* Add space below heading */
+}
+
+.feedback-form label {
+  display: block; /* Make labels on separate lines */
+  margin-bottom: 5px; /* Add space below labels */
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  background-color: #D4E7C5;
+  width: 100%; /* Make form elements full width */
+  padding: 5px; /* Add padding for better usability */
+  border: 1px solid #ccc; /* Add border to form elements */
+  border-radius: 3px; /* Add rounded corners to form elements */
+}
+
+.feedback-form textarea {
+  height: 150px; /* Adjust textarea height as needed */
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea[id="message"]{
+  color: black;
+}
+
+.feedback-form button {
+  background-color: #007bff; /* Set button background color */
+  color: white; /* Set button text color */
+  border: none; /* Remove default button border */
+  padding: 10px 20px; /* Add padding for better look */
+  border-radius: 5px; /* Add rounded corners to button */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+.contact-box h2,
+.contact-box p {
+  color: #fff; /* Contrasting color for text */
+}
+
+.contact-info h3,
+.contact-info ul li a {
+  color: #fff; /* Adjust for contact details */
+}
+
+.feedback-form h2,
+.feedback-form label {
+  color: #fff; /* Adjust for feedback form */
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  color: #fff; /* Match text color with background */
+}
+
+.feedback-form button {
+  background-color: #007bff; /* Choose contrasting button color */
+  color: #fff; /* Set button text color */
+}
+
+.skill{
+  text-align: center;
+  border: none;
+  box-shadow: none;
+}
+
+.project-preview img {
+  width: 100%; /* Fill the preview div */
+  height: 100%; /* Fill the preview div */
+  object-fit: cover; /* Maintain aspect ratio and crop if needed */
+}
+
+.project-preview:hover img {
+  transform: scale(1.2); /* Zooms in by 20% on hover */
+  transition: transform 0.3s ease-in-out; /* Adds smooth transition */
+  cursor: zoom-in; /* Changes cursor to indicate zooming */
+}
+
+.project-item {
+  position: relative; /* Allows layering elements */
+  padding-bottom: 20%;
+  
+}
+
+.project-preview {
+  position: absolute; /* Position image absolutely within container */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden; /* Hide overflowing image */
+  background-size: cover; /* Resize image to fit container */
+  background-position: center; /* Center image within container */
+  opacity: 1; /* Make image initially invisible */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade transition */
+  -webkit-mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Webkit-specific mask */
+  mask: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Standard mask */
+}
+
+.project-item:hover .project-preview {
+  opacity: 0.7;
+}
+
+.work{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
+}
